@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title></title>
+<style>
+h1, h2 {
+  text-align: center;
+}
+header {
+  text-align: center;
+  padding-bottom: 0.5rem;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  margin: auto;
+}
+nav {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  gap: 0.5rem;
+  justify-content: center;
+}
+.form {
+  display: grid;
+  grid-template-columns: 10rem 1fr
+}
+.results {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: auto;
+  gap: 0 10px;
+  padding: 0.5rem;
+}
+</style>
+</head>
+<body>
+  <header>
+    <h1>Car Vs Bart</h1>
+    <nav>
+      <a href="https://github.com/miniscruff/bart-vs-car">Source</a>
+      <a href="https://github.com/miniscruff/bart-vs-car/issues">Issues</a>
+      <a href="https://github.com/miniscruff/bart-vs-car/discussions">Suggestions</a>
+    </nav>
+    Compare cost of taking BART to driving and parking a car.
+  </header>
+  <main>
+    <div class="form">
+      <label for="origin-select">Origin</label>
+      <select id="origin-select" class="select" name="origin"></select>
+      <label for="dest-select">Destination</label>
+      <select id="dest-select" class="select" name="dest"></select>
+      <label for="gas-input">Gas per Gallon</label>
+      <input id="gas-input" type="text" name="gas" text="6.25"></input>
+      <label for="mpg-input">Miles per Gallon</label>
+      <input id="mpg-input" type="text" name="mpg" text="24"></input>
+    </div>
+    <div class="results">
+      <label for="bart-cost">Bart Cost</label>
+      <span id="bart-cost" class="result-text"></span>
+      <label for="car-cost">Car Cost</label>
+      <span id="car-cost" class="result-text"></span>
+    </div>
+  </main>
+  <script>
+    const carCost = document.getElementById("car-cost");
+    const bartCost = document.getElementById("bart-cost");
+    const originSelect = document.getElementById("origin-select");
+    const destSelect = document.getElementById("dest-select");
+    const gasInput = document.getElementById("gas-input");
+    const mpgInput = document.getElementById("mpg-input");
+
+    [ originSelect, destSelect ].map(ele => ele.addEventListener('change', update));
+    [ gasInput, mpgInput ].map(ele => ele.addEventListener('input', update));
+
+    let data = {};
+
+    function fetchData() {
+        fetch('/data.json')
+          .then(response => response.json())
+            .then(jsonData => {
+                data = jsonData;
+                buildSelect();
+                update();
+            });
+    }
+
+    function buildSelect() {
+        for (let station in data.stations) {
+            originSelect.options.add(new Option(data.stations[station].name, station));
+            destSelect.options.add(new Option(data.stations[station].name, station));
+        }
+        originSelect.selectedIndex = 0;
+        destSelect.selectedIndex = 1;
+    }
+
+    function update() {
+        try {
+          const originStation = originSelect.value;
+          const destStation = destSelect.value;
+          const route = data.routes[originStation][destStation];
+
+          gasInCents = Number.parseInt(gasInput.value.replaceAll(".", ""));
+          mpg = Number.parseFloat(mpgInput.value);
+
+          const rawCarCost = data.stations[destStation].parking + route.car_distance / mpg * gasInCents;
+          carCost.textContent = "$"+(rawCarCost/100).toFixed(2);
+          bartCost.textContent = "$"+(route.fare/100).toFixed(2);
+        } catch (exc) {
+            console.log("bad update:", exc);
+        }
+    }
+
+    fetchData();
+  </script>
+</body>
+</html>

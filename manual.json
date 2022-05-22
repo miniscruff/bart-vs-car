@@ -1,0 +1,154 @@
+{
+  "stations": {
+    "12TH": {
+        "parking": 1100
+    },
+    "16TH": {
+        "parking": 2400
+    },
+    "19TH": {
+        "parking": 1100
+    },
+    "24TH": {
+        "parking": 2700
+    },
+    "ANTC": {
+        "parking": 300
+    },
+    "ASHB": {
+        "parking": 300
+    },
+    "BALB": {
+        "parking": 2500
+    },
+    "BAYF": {
+        "parking": 300
+    },
+    "BERY": {
+        "parking": 300
+    },
+    "CAST": {
+        "parking": 300
+    },
+    "CIVC": {
+        "parking": 2400
+    },
+    "COLM": {
+        "parking": 300
+    },
+    "COLS": {
+        "parking": 355
+    },
+    "CONC": {
+        "parking": 300
+    },
+    "DALY": {
+        "parking": 300
+    },
+    "DBRK": {
+        "parking": 1500
+    },
+    "DELN": {
+        "parking": 300
+    },
+    "DUBL": {
+        "parking": 300
+    },
+    "EMBR": {
+        "parking": 2000
+    },
+    "FRMT": {
+        "parking": 300
+    },
+    "FTVL": {
+        "parking": 355
+    },
+    "GLEN": {
+        "parking": 375
+    },
+    "HAYW": {
+        "parking": 300
+    },
+    "LAFY": {
+        "parking": 300
+    },
+    "LAKE": {
+        "parking": 355
+    },
+    "MCAR": {
+        "parking": 355
+    },
+    "MLBR": {
+        "parking": 300
+    },
+    "MLPT": {
+        "parking": 300
+    },
+    "MONT": {
+        "parking": 1800
+    },
+    "NBRK": {
+        "parking": 300
+    },
+    "NCON": {
+        "parking": 250
+    },
+    "OAKL": {
+        "parking": 1100
+    },
+    "ORIN": {
+        "parking": 300
+    },
+    "PCTR": {
+        "parking": 300
+    },
+    "PHIL": {
+        "parking": 300
+    },
+    "PITT": {
+        "parking": 300
+    },
+    "PLZA": {
+        "parking": 300
+    },
+    "POWL": {
+        "parking": 1400
+    },
+    "RICH": {
+        "parking": 300
+    },
+    "ROCK": {
+        "parking": 355
+    },
+    "SANL": {
+        "parking": 300
+    },
+    "SBRN": {
+        "parking": 300
+    },
+    "SFIA": {
+        "parking": 800
+    },
+    "SHAY": {
+        "parking": 200
+    },
+    "SSAN": {
+        "parking": 300
+    },
+    "UCTY": {
+        "parking": 300
+    },
+    "WARM": {
+        "parking": 300
+    },
+    "WCRK": {
+        "parking": 300
+    },
+    "WDUB": {
+        "parking": 300
+    },
+    "WOAK": {
+        "parking": 1240
+    }
+  }
+}

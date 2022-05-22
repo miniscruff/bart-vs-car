@@ -1,0 +1,9 @@
+certifi==2022.5.18.1
+charset-normalizer==2.0.12
+idna==3.3
+nodeenv==1.6.0
+progressbar2==4.0.0
+python-dotenv==0.20.0
+python-utils==3.2.3
+requests==2.27.1
+urllib3==1.26.9
