@@ -95,6 +95,8 @@ nav {
         }
         originSelect.selectedIndex = 0;
         destSelect.selectedIndex = 1;
+        gasInput.textContent = "6.55";
+        mpgInput.textContent = "45";
     }
 
     function update() {
@@ -107,7 +109,9 @@ nav {
           mpg = Number.parseFloat(mpgInput.value);
 
           const rawCarCost = data.stations[destStation].parking + route.car_distance / mpg * gasInCents;
-          carCost.textContent = "$"+(rawCarCost/100).toFixed(2);
+          if (!Number.isNaN(rawCarCost)) {
+            carCost.textContent = "$"+(rawCarCost/100).toFixed(2);
+          }
           bartCost.textContent = "$"+(route.fare/100).toFixed(2);
         } catch (exc) {
             console.log("bad update:", exc);
