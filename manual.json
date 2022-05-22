@@ -1,154 +1,204 @@
 {
   "stations": {
     "12TH": {
-        "parking": 1100
+        "parking": 1100,
+        "side": "east"
     },
     "16TH": {
-        "parking": 2400
+        "parking": 2400,
+        "side": "west"
     },
     "19TH": {
-        "parking": 1100
+        "parking": 1100,
+        "side": "east"
     },
     "24TH": {
-        "parking": 2700
+        "parking": 2700,
+        "side": "west"
     },
     "ANTC": {
-        "parking": 300
+        "parking": 300,
+        "side": "east"
     },
     "ASHB": {
-        "parking": 300
+        "parking": 300,
+        "side": "east"
     },
     "BALB": {
-        "parking": 2500
+        "parking": 2500,
+        "side": "west"
     },
     "BAYF": {
-        "parking": 300
+        "parking": 300,
+        "side": "east"
     },
     "BERY": {
-        "parking": 300
+        "parking": 300,
+        "side": "east"
     },
     "CAST": {
-        "parking": 300
+        "parking": 300,
+        "side": "east"
     },
     "CIVC": {
-        "parking": 2400
+        "parking": 2400,
+        "side": "west"
     },
     "COLM": {
-        "parking": 300
+        "parking": 300,
+        "side": "west"
     },
     "COLS": {
-        "parking": 355
+        "parking": 355,
+        "side": "east"
     },
     "CONC": {
-        "parking": 300
+        "parking": 300,
+        "side": "east"
     },
     "DALY": {
-        "parking": 300
+        "parking": 300,
+        "side": "west"
     },
     "DBRK": {
-        "parking": 1500
+        "parking": 1500,
+        "side": "east"
     },
     "DELN": {
-        "parking": 300
+        "parking": 300,
+        "side": "east"
     },
     "DUBL": {
-        "parking": 300
+        "parking": 300,
+        "side": "east"
     },
     "EMBR": {
-        "parking": 2000
+        "parking": 2000,
+        "side": "west"
     },
     "FRMT": {
-        "parking": 300
+        "parking": 300,
+        "side": "east"
     },
     "FTVL": {
-        "parking": 355
+        "parking": 355,
+        "side": "east"
     },
     "GLEN": {
-        "parking": 375
+        "parking": 375,
+        "side": "west"
     },
     "HAYW": {
-        "parking": 300
+        "parking": 300,
+        "side": "east"
     },
     "LAFY": {
-        "parking": 300
+        "parking": 300,
+        "side": "east"
     },
     "LAKE": {
-        "parking": 355
+        "parking": 355,
+        "side": "east"
     },
     "MCAR": {
-        "parking": 355
+        "parking": 355,
+        "side": "east"
     },
     "MLBR": {
-        "parking": 300
+        "parking": 300,
+        "side": "west"
     },
     "MLPT": {
-        "parking": 300
+        "parking": 300,
+        "side": "east"
     },
     "MONT": {
-        "parking": 1800
+        "parking": 1800,
+        "side": "west"
     },
     "NBRK": {
-        "parking": 300
+        "parking": 300,
+        "side": "east"
     },
     "NCON": {
-        "parking": 250
+        "parking": 250,
+        "side": "east"
     },
     "OAKL": {
-        "parking": 1100
+        "parking": 1100,
+        "side": "east"
     },
     "ORIN": {
-        "parking": 300
+        "parking": 300,
+        "side": "east"
     },
     "PCTR": {
-        "parking": 300
+        "parking": 300,
+        "side": "east"
     },
     "PHIL": {
-        "parking": 300
+        "parking": 300,
+        "side": "east"
     },
     "PITT": {
-        "parking": 300
+        "parking": 300,
+        "side": "east"
     },
     "PLZA": {
-        "parking": 300
+        "parking": 300,
+        "side": "east"
     },
     "POWL": {
-        "parking": 1400
+        "parking": 1400,
+        "side": "west"
     },
     "RICH": {
-        "parking": 300
+        "parking": 300,
+        "side": "east"
     },
     "ROCK": {
-        "parking": 355
+        "parking": 355,
+        "side": "east"
     },
     "SANL": {
-        "parking": 300
+        "parking": 300,
+        "side": "east"
     },
     "SBRN": {
-        "parking": 300
+        "parking": 300,
+        "side": "west"
     },
     "SFIA": {
-        "parking": 800
+        "parking": 800,
+        "side": "west"
     },
     "SHAY": {
-        "parking": 200
+        "parking": 200,
+        "side": "east"
     },
     "SSAN": {
-        "parking": 300
+        "parking": 300,
+        "side": "west"
     },
     "UCTY": {
-        "parking": 300
+        "parking": 300,
+        "side": "east"
     },
     "WARM": {
-        "parking": 300
+        "parking": 300,
+        "side": "east"
     },
     "WCRK": {
-        "parking": 300
+        "parking": 300,
+        "side": "east"
     },
     "WDUB": {
-        "parking": 300
+        "parking": 300,
+        "side": "east"
     },
     "WOAK": {
-        "parking": 1240
+        "parking": 1240,
+        "side": "east"
     }
   }
 }

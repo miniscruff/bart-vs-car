@@ -108,8 +108,13 @@ nav {
           gasInCents = Number.parseInt(gasInput.value.replaceAll(".", ""));
           mpg = Number.parseFloat(mpgInput.value);
 
-          const rawCarCost = data.stations[destStation].parking + route.car_distance / mpg * gasInCents;
-          if (!Number.isNaN(rawCarCost)) {
+          const gasCost = route.car_distance / mpg * gasInCents;
+          if (!Number.isNaN(gasCost)) {
+            const rawCarCost = gasCost + data.stations[destStation].parking;
+            if (data.stations[originStation].side !== data.stations[destStation].side) {
+                // add bay bridge toll if stations are on opposite sides of the bay
+                rawCarCost += 700;
+            }
             carCost.textContent = "$"+(rawCarCost/100).toFixed(2);
           }
           bartCost.textContent = "$"+(route.fare/100).toFixed(2);
