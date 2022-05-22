@@ -110,7 +110,7 @@ nav {
 
           const gasCost = route.car_distance / mpg * gasInCents;
           if (!Number.isNaN(gasCost)) {
-            const rawCarCost = gasCost + data.stations[destStation].parking;
+            let rawCarCost = gasCost + data.stations[destStation].parking;
             if (data.stations[originStation].side !== data.stations[destStation].side) {
                 // add bay bridge toll if stations are on opposite sides of the bay
                 rawCarCost += 700;
