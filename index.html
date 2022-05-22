@@ -39,7 +39,7 @@ nav {
 </head>
 <body>
   <header>
-    <h1>Car Vs Bart</h1>
+    <h1>Bart vs Car</h1>
     <nav>
       <a href="https://github.com/miniscruff/bart-vs-car">Source</a>
       <a href="https://github.com/miniscruff/bart-vs-car/issues">Issues</a>
@@ -79,13 +79,13 @@ nav {
     let data = {};
 
     function fetchData() {
-        fetch('/data.json')
-          .then(response => response.json())
-            .then(jsonData => {
-                data = jsonData;
-                buildSelect();
-                update();
-            });
+        fetch(`${window.location}/data.json`)
+        .then(response => response.json())
+        .then(jsonData => {
+            data = jsonData;
+            buildSelect();
+            update();
+        });
     }
 
     function buildSelect() {
